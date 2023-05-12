@@ -138,6 +138,7 @@
             border-radius: 20px;
             margin: 20px;
         }
+
         .quotes{
             background-color: rgb(228, 228, 228);
             padding: 50px;
@@ -149,6 +150,41 @@
         }
         .quotes > .tag{
             float: right;
+        }
+
+        .signupnotifyer{
+            background-color: var(--button-back-color);
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 30px 50px;
+            margin: 40px 80px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .signupnotifyer p{
+            color: var(--line-text-color);
+            font-size: small;
+        }
+        .signupnotifyer h1{
+            font-size: large;
+        }
+        .signupnotifyer button{
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            width: 80px;
+            height: 30px;
+            color: #fff;
+        }
+
+        footer{
+            text-align: center;
+            background-color: #1F2937;
+            color: #fff;
+            padding: 25px 0;
+            font-size: x-small;
         }
     </style>
 
@@ -224,8 +260,11 @@
     </div>
 
     <div class="signupnotifyer">
-        <h1>Call to action! It's time!</h1>
+        <div>
+            <h1>Call to action! It's time!</h1>
         <p>Sign up for our product by clicking that button right over there!</p>
+        </div>
+        
         <button>Sign Up</button>
     </div>
     <footer>
