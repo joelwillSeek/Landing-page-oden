@@ -36,9 +36,12 @@
             background-color: var(--dark-background-top-and-footer-and-info-header-color-and-quote-text);
         }
 
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
         nav{
             background-color: var(--dark-background-top-and-footer-and-info-header-color-and-quote-text);
-            padding: 60px 90px;
+            padding: 10px 90px 60px 90px;
             max-width: 100%;
         }
         nav > ul{
@@ -49,10 +52,64 @@
             font-size: var(--link-text-font-size);
             color: var(--line-text-color);
             margin-right:10px;
+            position: relative;
+        }
+        nav > ul > li::before{
+            content: "";
+            background-color: #fff;
+            width: 0%;
+            overflow: hidden;
+            position: absolute;
+            height: 5px;
+            border-radius: 20px;
+            display: inline-block;
+            bottom: -5px;
+            transition: width ease-in-out 600ms;
+            right: 0;
+        }
+        nav > ul > li:hover::before{
+            width: 100%;
         }
         nav >.logo{
             font-size: var(--logo-font-size);
             color: var(--color-for-h1-and-logo-color);
+        }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: var(--dark-background-top-and-footer-and-info-header-color-and-quote-text);
+            padding: 20px 90px;
+        }
+        header > .right{
+            flex-grow: 1.5;
+        }
+        header > .left{
+            flex-shrink: 1.5;
+            flex-basis: 1.5;
+        }
+        header > .left > h1{
+            color: var(--color-for-h1-and-logo-color);
+            font-weight: 900;
+        }
+        header > .left > p{
+            color: var(--line-text-color);
+        }
+        header > .right > img{
+            max-width:300px;
+        }
+        header > .left > button{
+            background-color: var(--button-back-color);
+            color: var(--color-for-h1-and-logo-color);
+            padding: 5px 20px;
+            margin: 10px 0;
+            border: 1px solid transparent;
+            transition: border ease-in-out 300ms;
+            border-radius: 5px;
+        }
+        header > .left > button:hover{
+            border: 1px solid lightyellow;
         }
 
     </style>
@@ -60,7 +117,7 @@
 </head>
 <body>
     <nav>
-        <h1 class="left logo">Header Logo</h1>
+        <h3 class="left logo">Header Logo</h3>
         <ul class="right">
             <li>Link-1</li>
             <li>Link-2</li>
@@ -71,14 +128,13 @@
 
     <header>
         <div class="left">
-            <h1>This website is awesome</h1>
+            <h1>This website is <br> awesome</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos accusamus voluptatibus.</p>
             <button>Sign up</button>
         </div>
 
         <div class="right">
-            <!-- TODO:remeber to add the creater of image to readme.md -->
-            <img src="" alt="">
+            <img src="img/im.jpg" alt="Tech stuff">
         </div>
     </header>
 </body>
