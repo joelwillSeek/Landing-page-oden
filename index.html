@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+        :root{
+            --dark-background-top-and-footer-and-info-header-color-and-quote-text:#1F2937;
+            --size-for-h1:48px;
+            --weight-for-h1-and-info-header:extra-bold;
+            --color-for-h1-and-logo-color:#f9faf8;
+            --link-text-font-size:18px;
+            --line-text-color:#e5e7e8;
+            --logo-font-size:24px;
+            --button-back-color:#3882f6;
+            --info-header-size-and-quote-size:36px;
+            --quote-stule:lightitalic;
+            --quote-back-color:#e5e7eb;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        footer{
+            background-color: var(--dark-background-top-and-footer-and-info-header-color-and-quote-text);
+        }
+
+        nav{
+            background-color: var(--dark-background-top-and-footer-and-info-header-color-and-quote-text);
+            padding: 60px 90px;
+            max-width: 100%;
+        }
+        nav > ul{
+            list-style: none;
+        }
+        nav > ul > li{
+            display: inline-block;
+            font-size: var(--link-text-font-size);
+            color: var(--line-text-color);
+            margin-right:10px;
+        }
+        nav >.logo{
+            font-size: var(--logo-font-size);
+            color: var(--color-for-h1-and-logo-color);
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <h1 class="left logo">Header Logo</h1>
+        <ul class="right">
+            <li>Link-1</li>
+            <li>Link-2</li>
+            <li>Link-3</li>
+            <li>Link-4</li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="left">
+            <h1>This website is awesome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos accusamus voluptatibus.</p>
+            <button>Sign up</button>
+        </div>
+
+        <div class="right">
+            <!-- TODO:remeber to add the creater of image to readme.md -->
+            <img src="" alt="">
+        </div>
+    </header>
+</body>
+</html>
