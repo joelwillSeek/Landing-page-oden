@@ -98,6 +98,7 @@
         }
         header > .right > img{
             max-width:300px;
+            border-radius: 20px;
         }
         header > .left > button{
             background-color: var(--button-back-color);
@@ -112,6 +113,31 @@
             border: 1px solid lightyellow;
         }
 
+        .topmain{
+            max-width: 100%;
+            padding: 20px 90px;
+            text-align: center;
+        }
+        .topmain > h1{
+            color: var(--dark-background-top-and-footer-and-info-header-color-and-quote-text);
+            font-weight: 900;
+        }
+        .topmain > .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .topmain > .container > .card{
+            max-width: 200px;
+            min-height: 200px;
+        }
+        .topmain > .container > .card > .img{
+            border:3px solid #3882f6;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 20px;
+        }
     </style>
 
 </head>
@@ -137,5 +163,61 @@
             <img src="img/im.jpg" alt="Tech stuff">
         </div>
     </header>
+
+    <div class="topmain">
+        <h1>Some random article title</h1>
+        <div class="container">
+            <div class="card">
+                <div class="img">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <div class="text">Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Repellat, magnam.</div>
+            </div>
+    
+            <div class="card">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+                <div class="text">Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Repellat, magnam.</div>
+            </div>
+    
+            <div class="card">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+                <div class="text">Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Repellat, magnam.</div>
+            </div>
+    
+            <div class="card">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+                <div class="text">Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Repellat, magnam.</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="quotes">
+        <p class="quotes">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Officiis culpa sunt amet cupiditate, ad eaque commodi nostrum veniam qua
+            e impedit delectus inventore repellat exercitationem?
+        </p>
+        <p>-Thor,God of Thunder</p>
+    </div>
+
+    <div class="signupnotifyer">
+        <h1>Call to action! It's time!</h1>
+        <p>Sign up for our product by clicking that button right over there!</p>
+        <button>Sign Up</button>
+    </div>
+    <footer>
+        <p>Copyright &copy; The Odin Project 2021</p>
+    </footer>
 </body>
 </html>
